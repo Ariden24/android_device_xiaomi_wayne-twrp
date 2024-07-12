@@ -12,26 +12,25 @@
 /dev/block/bootdevice/by-name/cache        /cache          f2fs    noatime,nosuid,nodev,barrier=1,data=ordered                     wait,check
 /dev/block/bootdevice/by-name/userdata     /data           ext4    noatime,nosuid,nodev,barrier=1,data=ordered,noauto_da_alloc     wait,check,encryptable=ice
 /dev/block/bootdevice/by-name/userdata     /data           f2fs    noatime,nosuid,nodev,barrier=1,data=ordered,noauto_da_alloc     wait,check,formattable,fileencryption=ice
-/dev/block/mmcblk1p1                       /sdcard         vfat    nosuid,nodev                                                    wait
 /dev/block/bootdevice/by-name/cust         /cust           ext4    ro,nosuid,nodev,barrier=1                                       wait,check
 /dev/block/bootdevice/by-name/boot         /boot           emmc    defaults                                                        defaults
 /dev/block/bootdevice/by-name/recovery     /recovery       emmc    defaults                                                        defaults
 /dev/block/bootdevice/by-name/misc         /misc           emmc    defaults                                                        defaults
 
-/dev/block/bootdevice/by-name/persist       /persist         ext4    flags=display="Persist"
+/dev/block/bootdevice/by-name/persist      /persist        ext4    flags=display="Persist"
 
-/dev/block/bootdevice/by-name/modem       /firmware       vfat    
+/dev/block/bootdevice/by-name/modem        /firmware       vfat    
 /dev/block/bootdevice/by-name/bluetooth    /bt_firmware    emmc    
-/dev/block/bootdevice/by-name/dsp     /dsp            emmc    
-/dev/block/bootdevice/by-name/modemst1               /efs1           emmc                                           flags=backup=1;display="EFS"
-/dev/block/bootdevice/by-name/modemst2              /efs2           emmc                                            flags=backup=1;subpartitionof=/efs1
-/dev/block/bootdevice/by-name/fsc                       /efsc           emmc                                        flags=backup=1;subpartitionof=/efs1
-/dev/block/bootdevice/by-name/fsg                      /efsg           emmc                                         flags=backup=1;subpartitionof=/efs1
+/dev/block/bootdevice/by-name/dsp          /dsp            emmc    
+/dev/block/bootdevice/by-name/modemst1     /efs1           emmc                                           flags=backup=1;display="EFS"
+/dev/block/bootdevice/by-name/modemst2     /efs2           emmc                                            flags=backup=1;subpartitionof=/efs1
+/dev/block/bootdevice/by-name/fsc          /efsc           emmc                                        flags=backup=1;subpartitionof=/efs1
+/dev/block/bootdevice/by-name/fsg          /efsg           emmc                                         flags=backup=1;subpartitionof=/efs1
 
 # Removable storage
-/dev/block/sda1	/usb_otg	    vfat	   /dev/block/sda		  flags=display="USB-OTG";storage;wipeingui;removable
+/dev/block/sda1	                           /usb_otg	       vfat	   /dev/block/sda		  flags=display="USB-OTG";storage;wipeingui;removable
 
 # Flashable logical partitions
-/dev/block/bootdevice/by-name/system                 /system_image   emmc                                           flags=backup=1;display="System Image";flashimg=1
-/dev/block/bootdevice/by-name/vendor                  /vendor_image   emmc                                          flags=backup=1;display="Vendor Image";flashimg=1
-/dev/block/bootdevice/by-name/persist                  /persist_image  emmc                                         flags=backup=1;display="Persist Image";flashimg=1
+/dev/block/bootdevice/by-name/system       /system_image   emmc                                           flags=backup=1;display="System Image";flashimg=1
+/dev/block/bootdevice/by-name/vendor       /vendor_image   emmc                                          flags=backup=1;display="Vendor Image";flashimg=1
+/dev/block/bootdevice/by-name/persist      /persist_image  emmc                                         flags=backup=1;display="Persist Image";flashimg=1
