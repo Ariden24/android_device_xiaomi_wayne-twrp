@@ -3,7 +3,7 @@ export FOX_VERSION="R12.1"
 export OF_MAINTAINER="BensolBiru"
 
 # Build environment stuffs
-export FOX_BUILD_DEVICE="MI 6X"
+export FOX_BUILD_DEVICE="wayne"
 export ALLOW_MISSING_DEPENDENCIES=true
 export BUILD_USERNAME="ariden24"
 export BUILD_HOSTNAME="BensolBiru"
