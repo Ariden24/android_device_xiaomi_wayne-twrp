@@ -70,6 +70,7 @@ BOARD_KERNEL_CMDLINE := androidboot.hardware=qcom user_debug=31 msm_rtb.filter=0
 BOARD_KERNEL_CMDLINE += lpm_levels.sleep_disabled=1 sched_enable_hmp=1 sched_enable_power_aware=1
 BOARD_KERNEL_CMDLINE += service_locator.enable=1 androidboot.configfs=true
 BOARD_KERNEL_CMDLINE += androidboot.usbcontroller=a800000.dwc3
+BOARD_KERNEL_CMDLINE += androidboot.selinux=permissive
 BOARD_KERNEL_BASE        := 0x00000000
 BOARD_KERNEL_PAGESIZE    := 4096
 BOARD_KERNEL_TAGS_OFFSET := 0x00000100
@@ -132,8 +133,8 @@ TW_INPUT_BLACKLIST := "hbtp_vm"
 
 TW_SUPPORT_INPUT_AIDL_HAPTICS := true
 TW_USE_TOOLBOX := true
-#TW_EXCLUDE_APEX := true
-#TW_INCLUDE_REPACKTOOLS := true
+TW_EXCLUDE_APEX := true
+TW_INCLUDE_REPACKTOOLS := true
 TW_INCLUDE_RESETPROP := true
 
 #TW_OVERRIDE_SYSTEM_PROPS := \
